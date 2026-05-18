@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #e8ff3a;
+  --color-bg-base: #0e0f0c;
+  --color-bg-surface: #161813;
+  --color-status-red: #ff5c4d;
+  --color-status-green: #5eea9b;
+  --color-status-amber: #ffb547;
+  
+  --font-serif: "Fraunces", serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-base text-gray-200 font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-white;
+  }
+}
+
+@layer components {
+  .btn-brand {
+    @apply bg-brand text-bg-base font-bold py-3 px-6 rounded-none transition-all hover:opacity-90 active:scale-95;
+  }
+}

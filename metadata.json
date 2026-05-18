@@ -1,0 +1,6 @@
+{
+  "name": "ContractCoach",
+  "description": "AI-powered contract review for athletes. Flag predatory clauses, explain legal risks in plain English, and negotiate with confidence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
